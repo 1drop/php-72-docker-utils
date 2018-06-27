@@ -10,4 +10,4 @@ RUN composer global require mickaelandrieu/xml-linter
 RUN curl -Lo git-lfs.tar.gz https://github.com/git-lfs/git-lfs/releases/download/v2.3.4/git-lfs-linux-amd64-2.3.4.tar.gz \
     && tar xzf git-lfs.tar.gz && cd git-lfs-2.3.4 && ./install.sh && cd .. && rm -rf git-lfs*
 RUN curl -Lo /usr/local/bin/php-cs-fixer http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar && chmod +x /usr/local/bin/php-cs-fixer
-
+RUN curl -Lo /usr/local/bin/phpmd http://static.phpmd.org/php/latest/phpmd.phar && chmod +x /usr/local/bin/phpmd
